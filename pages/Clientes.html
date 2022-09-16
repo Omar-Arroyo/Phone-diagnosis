@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -86,7 +89,7 @@
         </article>      
     </section>
 </div>
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up" data-aos-duration="1000">
         <div class="logoFooter">
             <img src="../images/LogoPD.png" alt="">
         </div>
@@ -124,5 +127,8 @@
             <h6>Phone diagnosis</h6>
         </div>
     </footer>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
