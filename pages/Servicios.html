@@ -20,66 +20,128 @@
 </head>
 
 <body>
-    <header class="container-fluid">
-        <nav class="navbar navbar-expand-lg header">
-            <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../images/LogoPD.png" alt="Logo" width="130">
-            </a>
-              <a class="navbar-brand" href="../index.html">Phone diagnosis</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarText">
-                <ul class="navbar-nav mb-2 mb-lg-0 nav">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="Nosotros.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="Servicios.html">Servicios</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="Clientes.html">Clientes</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="Contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
+<header class="container-fluid">
+    <nav class="navbar navbar-expand-lg header">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../images/LogoPD.png" alt="Logo" width="130">
+        </a>
+        <a class="navbar-brand" href="../index.html">Phone diagnosis</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+            <ul class="navbar-nav mb-2 mb-lg-0 nav">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="Servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Clientes.html">Clientes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Contacto.html">Contacto</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+</header>
+
+<main class="mainServicios container-fluid mt-4 mb-3">
+    <h2>Servicios</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum facere quod nesciunt dolores qui vitae corporis voluptatem, nemo, autem sequi possimus ipsum labore praesentium facilis quibusdam reprehenderit alias veritatis doloribus explicabo incidunt, impedit cumque iure. Rem aspernatur optio ratione sed, molestiae ad dolor voluptatum eum eos amet necessitatibus natus nulla assumenda facere odio illo dolorum atque beatae animi!.</p>
+</main> 
+
+<section class="container-fluid">
+    <div class="row justify-content-around">
+        <div class="card cardServicios col-3" style="width: 15rem;">
+            <img src="../images/tactil.png" class="card-img-top imgServicios" alt="...">
+            <div class="card-body">
+                <h4 class="card-title text-center">Cambios de pantalla táctil</h4>
             </div>
-          </nav>
-    </header>
+        </div>
 
-<div class="contenedorServicios">
-    <main class="mainServicios">
-        <h2>Servicios</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum facere quod nesciunt dolores qui vitae corporis voluptatem, nemo, autem sequi possimus ipsum labore praesentium facilis quibusdam reprehenderit alias veritatis doloribus explicabo incidunt, impedit cumque iure. Rem aspernatur optio ratione sed, molestiae ad dolor voluptatum eum eos amet necessitatibus natus nulla assumenda facere odio illo dolorum atque beatae animi!.</p>
-    </main>   
+        <div class="card cardServicios col-3" style="width: 15rem;">
+            <img src="../images/repg.png" class="card-img-top imgServicios" alt="...">
+            <div class="card-body">
+                <h4 class="card-title text-center">Reparaciones genéricas</h4>
+            </div>
+        </div>
+
+        <div class="card cardServicios col-3" style="width: 15rem;">
+            <img src="../images/vidrot.png" class="card-img-top imgServicios" alt="...">
+            <div class="card-body">
+                <h4 class="card-title text-center">Colocación de vidrio templado </h4>
+            </div>
+        </div>
+
+        <div class="card cardServicios col-3" style="width: 15rem;">
+            <img src="../images/expm.png" class="card-img-top imgServicios" alt="...">
+            <div class="card-body">
+                <h4 class="card-title text-center">Expansión de memoria</h4>
+            </div>
+        </div>
+    </div>
+</section>
+          
+<section class="container-fluid row justify-content-around mt-5 fondoServicios">
+        <form class="row col-5 form">
+            <div class="col-12">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" name="nombre" placeholder="Escribe tu nombre">
+            </div>
     
-    <section class="sectionServicios">
-        <div class="imgServicios">
-            <h3>Cambios de pantalla tactil</h3>
-            <img src="../images/tactil.png" alt=""></div>
-        <div class="imgServicios">
-            <h3>Reparaciones genericas</h3>
-            <img src="../images/repg.png" alt=""></div>
-        <div class="imgServicios__3">
-            <h3>Aplicación de hidrogel o vidreo templado</h3>
-            <img src="../images/vidrot.png" alt=""></div>
-        <div class="imgServicios">
-            <h3>Expansión de memoria</h3>
-            <img src="../images/expm.png" alt=""></div>
-    </section>
+            <div class="col-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" placeholder="Escribe tu correo">
+            </div>
+    
+            <div class="col-6 mb-3">
+                <label for="telefono" class="form-label">Telefono</label>
+                <input type="numer" class="form-control" name="telefono" placeholder="Escribe tu telefono">
+            </div>
+    
+            <div class="col-12">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Marca del equipo</option>
+                    <option value="1">Samsung</option>
+                    <option value="2">Iphone</option>
+                    <option value="3">Lg</option>
+                    <option value="4">Xiaomi</option>
+                    <option value="5">Huawei</option>
+                    <option value="6">Motorola</option>
+                    <option value="7">Otro</option>
+                </select>
+            </div>
 
-    <aside class="subServicios">
-        <h2>¿Necesitas algun servicio particular?</h2>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi enim nobis necessitatibus recusandae! Ducimus dolorum molestiae eum adipisci officia harum! Quidem aspernatur beatae pariatur modi tempore? Vero iste harum nisi!
-            </p>
-    </aside>
+            <div class="col-12 mb-3">
+                <label for="consulta">Servicio a consultar</label>
+                <textarea name="consulta" class="form-control" cols="50" rows="3"></textarea>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <input class="presupuesto" type="submit" value="Consultar presupuesto">
+                </div>
+            </div>
+        </form>
+
+        <article class="subServicios col-6">
+            <h2 class="mb-4">¿Necesitas algún servicio en particular?</h2>
+                <p>
+                    Llena el siguiente formulario y en la brevedad posible un asistente administrativo te responderá tu consulta.
+                </p>
+        </article>
+</section>
+<!-- Boton de WhatsApp -->
+<div class="fixed-bottom">
+    <a href="https://www.whatsapp.com/" target="_blank"><button class="whatsApp"><i class="bi bi-whatsapp"></i></button></a>
 </div>
        
 <footer class="container-fluid footer" data-aos="fade-up" data-aos-duration="1000">
@@ -94,10 +156,10 @@
         <form action="">
             <label for="nombre">Nombre</label>
             <input type="text" name="nombre" >
-           
+            
             <label for="correo">Correo</label>
             <input type="email" name="correo">
-           
+            
         
             <label for="mensaje">Dejanos tu mensaje</label>
         <div class="form">
@@ -113,22 +175,28 @@
     
     <div class="redesFooter">
         <h4>Siguenos en nuestras redes</h4>
-        <button class="botonRedes facebook"><i class="bi bi-facebook"></i></button>
-        <button class="botonRedes instagram"><i class="bi bi-instagram"></i></button>
-        <button class="botonRedes twitter"><i class="bi bi-twitter"></i></button>
+        
+        <a href="https://www.facebook.com/" target="_blank"><button class="botonRedes facebook"><i class="bi bi-facebook"></i></button></a>
+
+        <a href="https://www.instagram.com/" target="_blank"><button class="botonRedes instagram"><i class="bi bi-instagram"></i></button></a>
+
+        <a href="https://twitter.com/" target="_blank"><button class="botonRedes twitter"><i class="bi bi-twitter"></i></button></a>
+
+        <a href="https://www.youtube.com/" target="_blank"><button class="botonRedes youtube"><i class="bi bi-youtube"></i></button></a>
+
+        <a href="https://www.tiktok.com/" target="_blank"><button class="botonRedes tiktok"><i class="bi bi-tiktok"></i></button></a>
     </div>
 
     <div class="copyright">
-            <img src="../images/Copyright.svg-removebg-preview.png" alt="Icino Copyright">
-        <h5>Copyright</h5>
-            
+        <img src="../images/Copyright.svg-removebg-preview.png" alt="Icino Copyright">
+        <h5>Copyright</h5>    
         <h6>Phone diagnosis</h6>
     </div>
 </footer>
-    <script>
-        AOS.init();
-    </script>
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script>
+    AOS.init();
+</script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>

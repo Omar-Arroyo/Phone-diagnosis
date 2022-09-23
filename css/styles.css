@@ -12,6 +12,7 @@ body{
 h2{
     font-size: 2.5rem;
     color: #000046;
+    font-weight: 700;
     text-shadow: 2px 2px 4px #103a41;
 }
 
@@ -39,9 +40,7 @@ p{
     color: #000000;
     font-size: 20px;
 }
-
 /* Header */
-
 .container-fluid{
     padding-left: 0%;
     padding-right: 0%;
@@ -122,6 +121,7 @@ p{
 .card-text{
     color: #dbfaff;
 }
+
 .imgborde{
     border-radius: 50px;
     height: 300px;
@@ -137,9 +137,6 @@ p{
     border-top-style: solid;
     border-top-color: #1d97dd;
 }
-
-/* Section index */
-
 /* Footer */
 .footer{
     border-top-style: solid;
@@ -179,11 +176,8 @@ p{
 
 .contactoFooter{
     grid-area: formulario;
-}
-
-.contactoFooter img{
-    height: 30px;
-    width: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .contactoFooter label{
@@ -278,6 +272,34 @@ p{
     color: #00acee;
 }
 
+.youtube{
+    color: #FF0000 ;
+}
+
+.tiktok{
+    color: #000000;
+}
+
+.fixed-bottom{
+    right: 10px;
+    left: auto;
+    bottom: 10px;
+}
+.whatsApp{
+    color: white;
+    border-style: 1px solid;
+    background: #157347;
+    border-radius: 10px;
+    border-color: #157347;
+    font-size: 2rem;
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+}
+
+.whatsApp:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
 /* Nosotros */
 
 .contenedorNosotros{
@@ -349,56 +371,85 @@ p{
    
 /* Servicios */
 
-.contenedorServicios{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3,0.5fr);
-    grid-template-areas:
-    "mainServ"
-    "sectionServ"
-    "asideServ"
-    ;
-}
-
 .mainServicios{
-    margin: 20px 100px;
     text-align: center;
     line-height: 35px;
     grid-area: mainServ;
 }
 
-.sectionServicios{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    grid-area: sectionServ;
+.mainServicios p{
+    margin: 0px 100px;
 }
 
-.imgServicios h3{
-    text-align: center;
+.cardServicios{
+    background: linear-gradient(45deg, rgb(60 95 147) 0%, rgba(0,60,129,1) 100%);
+    border-style: solid;
+    border-color: #084298;
+    border-radius: 30px;
+    padding-top: 20px;
+    box-shadow: -5px 2px 4px #000046;
+    opacity: .8;
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
 }
 
-.imgServicios img{
-    height: 250px;
+.cardServicios:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
+    opacity: 1;
+}
+
+.imgServicios{
     width: 100%;
-}
-
-.imgServicios__3 img{
-    height: 220px;
-    width: 80%;
-    display: block;
-    margin: auto;
+    height: 160px;
 }
 
 .subServicios{
-    margin: 35px 100px;
+    margin-top: 30px;
+    margin-left: 50px;
     text-align: center;
     grid-area: asideServ;
 }
 
+.subServicios h2{
+    color: #ddf7ff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px #071f24;
+}
+
 .subServicios p{
+    font-size: 22px;
     line-height: 35px;
+    color: #ecfaff;
+    text-shadow: 2px 3px 5px black;
+}
+
+.fondoServicios{
+    background-image: url(../images/FondoServicios.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 100px;
+    border-radius: 15px;
+    box-shadow: -2px 3px 4px black;
+    margin: auto;
+}
+
+.presupuesto{
+    background: linear-gradient(0deg, rgba(127,127,213,1) 0%, rgba(134,168,231,1) 50%, rgba(145,234,228,1) 100%);
+    color: #000046;
+    font-weight: 800;
+    border-radius: 10px;
+    border-style: none;
+    padding: 5px 20px;
+    text-shadow: 2px 2px 4px rgb(114, 114, 114);
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+}
+
+.presupuesto:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
 }
 
 /* CLientes */
@@ -464,7 +515,7 @@ p{
     margin-left: 20px;
     margin-bottom: 20px;
 }
-.formContacto label{
+.form label{
     color: aliceblue;
     text-shadow: 2px 2px 4px black;
 }
@@ -500,7 +551,8 @@ p{
 }
 
 .mensajeContacto h2{
-    color: #220130;
+    color: #000046;
+    text-shadow: 2px 2px 4px #103a41;
     text-align: center;
     animation: pulse;
     animation-duration: 1s;
