@@ -1,0 +1,317 @@
+@import"variables";
+@import"header";
+@import"footer";
+@import"index";
+@import"Nosotros";
+@import"Servicios";
+@import"Clientes";
+@import"Contacto";
+
+html{
+    font-size: 62,5%;
+}
+/* Body */
+body{
+    margin: 0%;
+    font-family:'Lato', sans-serif;
+    background: linear-gradient(20deg, #000046 0%, #3b9da2 50%, #93f5f9 100%);
+    overflow-x: hidden;
+}
+
+h2{
+    font-size: 2.5rem;
+    color: $colorPrincipal;
+    font-weight: 700;
+    text-shadow: $sombraH2;
+}
+
+h3{
+    font-size: 1.7rem;
+    color: $colorSecundario;
+    text-shadow: $sombraH3;
+}
+
+h4{
+    color: $colorSecundario;
+    font-size: 1.5rem;
+    text-shadow: $sombra;
+}
+
+h5{
+    color: $colorPrincipalParrafo;
+}
+
+h6{
+    color: $colorPrincipalParrafo;
+}
+
+p{
+    color: $colorPrincipalParrafo;
+    font-size: 20px;
+}
+
+/* Resposive Tablet */
+
+@media screen and (max-width: 768px){
+    /* Body */
+        body{
+            overflow-x: hidden;
+        }
+        
+        h2{
+            font-size: 2rem;
+        }
+        
+        h3{
+            font-size: 1.2rem;
+        }
+        
+        h4{
+            font-size: 1.2rem;
+        }
+        
+        p{
+            font-size: 18px;
+        }
+    /* Header*/ 
+        .navbar-brand{
+            font-size: 4rem;
+            margin-left: 0px;
+        }
+    
+        .navbar-toggler{
+            margin: auto;
+        }
+    
+        .nav li{
+            font-size: 20px;
+        }
+    
+        .navbar-collapse{
+            text-align: center;
+        }
+    /* Main */
+    
+        .parallax{
+            padding: 50px;
+        }  
+    
+        .tituloMain{
+            font-size: 3rem;
+            margin-top: 10px;
+        }
+    
+        .card{
+            width: 18rem;
+            transition: none;
+            &:hover{
+                transform: none;
+            }
+        }
+    
+    
+        .tarjeta div:nth-child(3){
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+        }
+    
+        .imgborde{
+            border-radius: 50px;
+            height: 250px;
+        }
+    
+        .carrusel img{
+            margin: auto;
+            width: 140px;
+        }
+    
+    /* Footer */
+        .footer{
+            grid-template-columns: 25% 35% 40%;
+        }
+        
+        .logoFooter img{
+            height: 100px;
+        }
+        
+        .suscripcion p{
+            line-height: 30px;
+            font-size: 14px;
+        }
+        
+        .correo input{
+            height: 30px;
+        }
+        
+        .correoBoton{
+            font-size: 19px;
+        }
+        
+        .copyright{
+            margin-top: 5px;
+            img{
+                height: 20px;
+            }
+        }
+    
+    
+        .copyright h5{
+            font-size: 12px;
+            margin: 0%;
+        }
+        
+        .copyright h6{
+            padding: 0 20px;
+            margin: 0%;
+        }
+        
+        .botonRedes{
+            font-size: 1.2rem;
+            transition: none;
+            &:hover{
+                transform: none;
+            }
+        }
+        
+        .fixed-bottom{
+            right: 10px;
+            left: auto;
+            bottom: 10px;
+        }
+
+        .whatsApp{
+            font-size: 1.4rem;
+            transition: none;
+            &:hover{
+                transform: none;
+            }
+        }
+        
+    /* Nosotros */
+    
+        .mainNosotros{
+            margin: 20px 62px;
+            line-height: 30px;
+        }
+    
+        .contenedorMapa{
+            flex-direction: row; 
+        }
+    
+        .iframeMaps{
+            display: none;
+        }
+    
+        .iframeMaps2{
+            display: initial;
+            iframe{
+                border-radius: 30px;
+            }
+        }
+    
+        .horario ul li{
+            font-size: 16px;
+        }
+    
+    /* Servicios */
+    
+        .mainServicios{
+            line-height: 30px;
+            p{
+                margin: 0px 50px;
+            }
+        }
+    
+        .tarjetasMargen{
+            margin: 20px 50px;
+        }
+    
+        .tarjetaServ div:nth-child(1n){
+            margin: 10px;
+        }
+    
+        .cardServicios{
+            padding-top: 20px;
+            opacity: 1;
+            transition: none;
+            &:hover{
+                transform: none;
+                opacity: 1;
+            }
+        }
+    
+        .subServicios{
+            margin-top: 60px;
+            margin-left: 0px;
+            h2{
+                font-size: 1.8rem;
+            }
+            p{
+                font-size: 18px;
+                line-height: 30px;
+            }
+        }
+    
+        .fondoServicios{
+            padding: 50px 60px;
+        }
+    
+        .presupuesto{
+            transition: none;
+            &:hover{
+                transform: none;
+            }
+        }
+    
+    /* Clientes */
+    
+        .mainClient{
+            margin: 20px 62px;
+            line-height: 30px;
+        }
+    
+        .artClient{
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+    
+        .avatar img{
+            height: 250px;
+            width: 100%;
+        }
+    
+        .contenedorReseña{
+            text-align: center;
+            flex-direction: column;
+            margin-right: 0px;
+            p{
+                margin: 20px 62px;
+            }
+        }
+    
+        .valoracion img{
+            width: 100%;
+            height: 50px;
+        }
+    
+    /* Contacto */
+        
+        .mainContacto{
+            margin: 20px 62px;
+            line-height: 30px;
+        }
+    
+        .form label{
+            font-size: 18px;
+        }
+    
+        .iconosContacto img{
+            height: 80px;
+        }
+    
+        .contenedorMensaje2{
+            justify-content: space-between;
+        }
+    
+    } 

@@ -1,0 +1,41 @@
+.margen{
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.header{
+    background: linear-gradient(20deg, #000046 5%, #3b9da2 55%, #1884a2 100%);
+    border-bottom-style: solid;
+    border-bottom-color: #1d97dd;
+}   
+
+.navbar-brand{
+    color:$colorSecundario;
+    font-style: italic; 
+    font-size: 4.2rem;
+    font-weight: 900;
+    margin-left: 50px;
+    text-shadow: $sombra;
+    &:hover {
+        color: $colorSecundario;
+    }
+}
+
+.navbar-nav .nav-link.active{
+    color: $colorSecundarioParrafo;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: $colorSecundarioParrafo;
+}
+
+.nav li{
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+    a{
+        text-decoration: none;
+        color: $colorSecundario;
+        text-shadow: 2px 2px 5px #033138;
+    }
+}

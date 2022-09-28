@@ -1,12 +1,13 @@
-html{
+/* html{
     font-size: 62,5%;
 }
 
-/* Body */
+
 body{
     margin: 0%;
     font-family:'Lato', sans-serif;
     background: linear-gradient(20deg, #000046 0%, #3b9da2 50%, #93f5f9 100%);
+    overflow-x: hidden;
 }
 
 h2{
@@ -17,14 +18,14 @@ h2{
 }
 
 h3{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: #ffffff;
     text-shadow: 2px 2px 4px #000046;
 }
 
 h4{
     color: #ffffff;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     text-shadow: 2px 3px 5px black;
 }
 
@@ -40,8 +41,8 @@ p{
     color: #000000;
     font-size: 20px;
 }
-/* Header */
-.container-fluid{
+
+.margen{
     padding-left: 0%;
     padding-right: 0%;
 }
@@ -58,7 +59,7 @@ p{
     font-size: 4.2rem;
     font-weight: 900;
     margin-left: 50px;
-    text-shadow: 5px 5px 5px #103a41;
+    text-shadow: 2px 4px 5px #000000;
 }
 
 .navbar-brand:hover {
@@ -85,8 +86,7 @@ p{
     text-shadow: 2px 2px 5px #033138;
 }
 
-/* Index */
-/* main index */
+
 .parallax{
     background-image: url(../images/fondo.png);
     background-attachment: fixed;
@@ -109,6 +109,7 @@ p{
     background:#033138;
     border-radius:30px;
     padding-top: 20px;
+    width: 23rem;
     box-shadow: -5px 2px 4px #1393dd;
     transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
 }
@@ -137,17 +138,17 @@ p{
     border-top-style: solid;
     border-top-color: #1d97dd;
 }
-/* Footer */
+
 .footer{
     border-top-style: solid;
     border-top-color: #1d97dd;
     background: linear-gradient(45deg,#000046  40%, #1884a2 100%);
     display: grid;
-    grid-template-columns: 30% 10% 20% 40%;
+    grid-template-columns: 35% 30% 35%;
     grid-template-rows: 70% 30%;
     grid-template-areas: 
-    "logo contacto formulario redes"
-    "nameLogoFooter contacto formulario copy"
+    "logo suscripcion redes"
+    "nameLogoFooter correo copy"
     ;
 }
 
@@ -158,7 +159,7 @@ p{
 }
 
 .logoFooter img{
-    height: 140px;
+    height: 130px;
     width: 100%;
 }
 
@@ -167,40 +168,44 @@ p{
     justify-self: center;
 }
 
-.contacto{
-    grid-area: contacto;
-    transform:rotate(270deg);
-    align-self: center;
-    justify-self: end;
-}
-
-.contactoFooter{
-    grid-area: formulario;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-
-.contactoFooter label{
-    color: aliceblue;
-    text-shadow: 2px 2px 4px black;
-}
-
-.contactoFooter input{
+.suscripcion{
+    grid-area: suscripcion;
+    margin: auto;
     display: block;
-    border-style: solid;
-    border-color: #16167e;
-    border-radius: 10px;
 }
 
-.contactoFooter textarea{
-    display: block;
-    border-radius: 10px;
-    border-color: #16167e;
+.suscripcion p{
+    line-height: 35px;
+    color: #ecfaff;
+    text-shadow: 2px 3px 5px black;
 }
+
+.correo{
+    grid-area: correo;
+} 
+
+.correo label{
+    display: none;
+}
+
+.correo input{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.correoBoton{
+    color: white;
+    background: #28867a;
+    border-style:none ;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 1.5rem;
+}
+
 
 .redesFooter{
+    display: block;
     text-align: center;
-    margin: auto;
     grid-area: redes;
 }
 
@@ -224,28 +229,10 @@ p{
     padding: 0 20px;
 }
 
-.form{
-    display: flex;
-}
-
-.botonesSend{
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-    padding-left: 5px;
-}
-
-.botonSend{
-    border-style: none;
-    background: none;
-    font-size: 2rem;
-    color: aliceblue;
-}
-
 .botonRedes{
     background: none;
     border-style: none;
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin: 25px 10px 0px 10px;
     transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
 }
@@ -298,11 +285,11 @@ p{
 .whatsApp:hover{
     cursor: pointer;
     transform: translateY(-3px);
-}
+} */
 
 /* Nosotros */
 
-.contenedorNosotros{
+/* .contenedorNosotros{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3,0.1fr);
@@ -367,14 +354,13 @@ p{
 .horario ul li{
     font-size: 20px;
     line-height: 30px;
-}
+} */
    
 /* Servicios */
 
-.mainServicios{
+/* .mainServicios{
     text-align: center;
     line-height: 35px;
-    grid-area: mainServ;
 }
 
 .mainServicios p{
@@ -407,7 +393,6 @@ p{
     margin-top: 30px;
     margin-left: 50px;
     text-align: center;
-    grid-area: asideServ;
 }
 
 .subServicios h2{
@@ -431,8 +416,9 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px 100px;
-    border-radius: 15px;
-    box-shadow: -2px 3px 4px black;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: -2px -3px 4px black;
     margin: auto;
 }
 
@@ -451,10 +437,10 @@ p{
     cursor: pointer;
     transform: translateY(-3px);
 }
-
+ */
 /* CLientes */
 
-.contenedorClientes{
+/* .contenedorClientes{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2,0.1fr);
@@ -484,8 +470,6 @@ p{
     margin-right: 20px;
     display: flex;
     align-items: center;
-    position: relative;
-    top: -35px;
 }
 
 .avatar{
@@ -500,11 +484,11 @@ p{
 
 .valoracion img{
     height: 60px;
-}
+} */
 
 /* Contacto */
 
-.mainContacto{
+/* .mainContacto{
     margin: 20px 100px;
     text-align: center;
     line-height: 35px;
@@ -516,6 +500,7 @@ p{
     margin-bottom: 20px;
 }
 .form label{
+    font-size: 20px;
     color: aliceblue;
     text-shadow: 2px 2px 4px black;
 }
@@ -557,218 +542,152 @@ p{
     animation: pulse;
     animation-duration: 1s;
     animation-iteration-count: infinite;
-}
+} */
 
 /* Responsive Tablet */
 
-/* @media screen and (max-width: 768px){
-
+@media screen and (max-width: 768px){
+/* Body */
+    body{
+        overflow-x: hidden;
+    }
+    
     h2{
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+    
+    h3{
+        font-size: 1.2rem;
     }
     
     h4{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     
     p{
         font-size: 18px;
-        margin: 20px;
-    } */
+    }
 /* Header*/ 
-    /* .header{
-        height: 200px;
-    }   
-    
-    .logoHeader img{
-        height: 120px;
-    }
-
-    .header__titulo{
-        font-size: 3rem;
-    }
-    
-    .nav{
-        width: 418px;
-        margin-top: 0px;
-    }
-    
-    .nav ul li{
-        font-size: 18px;
-    }
-    
-    .iconosRedes{
-        margin-top: 0px;
-    }
-
-    .iconosRedes img{
-        height: 35px;
-        width: 35px;
-        padding: 0px 5px
-    } */
-
-/* Main */
-
-    /* .main{
-        grid-template-columns: 1.2fr 1fr;
-        grid-template-rows: repeat(3,0.1fr);
-        grid-template-areas:
-            "tituloMain tituloMain"
-            "tituloMain2 tituloMain2"
-            "parrafoMain fotoMain";
-    ;
-}
-    .tituloMain{
-        font-size: 1.5rem;
-    }
-
-    .mainDiv{
-        margin: 10px 30px;
-    }
-    
-    .mainImg{
-        grid-area: fotoMain;
-        justify-self: center;
-        align-self: center;
-        height: 80%;
-    }
-    
-    .main img{
-        height: 300px;
-        width: 100%;
-    } */
-
-/* Section */
-
-    /* Article1 */
-    /* .article1{
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.1fr repeat(2,1fr);
-        grid-template-areas: 
-        "tituloSection1"
-        "article1"
-        "fotoArt1"
-        ;
-        padding: 0px 20px 20px 20px;
-    }
-
-    .tituloSection1{
-        text-align: center;
-        padding: left 0px;
-    }
-
-    .articleDiv1{
-        padding-left: 0px;
+    .navbar-brand{
+        font-size: 4rem;
         margin-left: 0px;
     }
 
-    .articleImg1{
-        justify-self: center;
-        width: 400px;
+    .navbar-toggler{
+        margin: auto;
     }
 
-    .article1 img{
+    .nav li{
+        font-size: 20px;
+    }
+
+    .navbar-collapse{
+        text-align: center;
+    }
+/* Main */
+
+    .parallax{
+        padding: 50px;
+    }  
+
+    .tituloMain{
+        font-size: 3rem;
+        margin-top: 10px;
+    }
+
+    .card{
+        width: 18rem;
+        transition: none;
+    }
+
+    .card:hover{
+        transform: none;
+    }
+
+    .tarjeta div:nth-child(3){
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .imgborde{
+        border-radius: 50px;
         height: 250px;
-        width: 85%;
+    }
+
+    .carrusel img{
         margin: auto;
-        display: block;
-    } */
-    /* Article2 */
-    /* .article2{
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.1fr repeat(2,1fr);
-        grid-template-areas: 
-        "tituloSection2"
-        "article2"
-        "fotoArt2"
-        ;
-        padding: 0px 20px 20px 20px;
+        width: 140px;
     }
 
-    .tituloSection2{
-        text-align: center;
-        padding: left 0px;
-    }
-
-    .articleDiv2{
-        padding-left: 0px;
-        margin-right: 0px;
-    }
-
-    .articleImg2{
-        height: 280px;
-        width: auto;
-        margin: auto;
-        display: block;
-    }
-
-    .article2 img{
-        width: 100%;
-        height: 280px;
-    } */
-    
 /* Footer */
-
-    /* .footer{
-        height: 300px;
-        grid-template-columns: 25% 10% 35% 30%;
-        grid-template-rows: 60% 40%;
-        grid-template-areas:
-        "logo contacto formulario redes"
-        "nameLogoFooter contacto formulario copy";
+    .footer{
+        grid-template-columns: 25% 35% 40%;
     }
-
+    
     .logoFooter img{
-        height: 140px;
-        width: 100%;
+        height: 100px;
     }
-
-    .nameLogoFooter{
-        grid-area: nameLogoFooter;
-        justify-self: center;
-        font-size: 2rem;
+    
+    .suscripcion p{
+        line-height: 30px;
+        font-size: 14px;
     }
-
-    .contacto{
-        grid-area: contacto;
-        transform: rotate(270deg);
-        align-self: center;
-        justify-self: center;
-    }
-
-    .contactoFooter{
-        grid-area: formulario;
-        justify-self: center;
-        align-self: center;
-    }
-
-    .redesFooter{
-        text-align: center;
-        grid-area: redes;
-    }
-
-    .redesFooter img{
+    
+    .correo input{
         height: 30px;
-        width: 30px;
-        padding: 0 10px;
-    } */
+    }
+    
+    .correoBoton{
+        font-size: 19px;
+    }
+    
+    .copyright{
+        margin-top: 5px;
+    }
+
+    .copyright img{
+        height: 20px;
+    }
+
+    .copyright h5{
+        font-size: 12px;
+        margin: 0%;
+    }
+    
+    .copyright h6{
+        padding: 0 20px;
+        margin: 0%;
+    }
+    
+    .botonRedes{
+        font-size: 1.2rem;
+        transition: none;
+    }
+    
+    .botonRedes:hover{
+        transform: none;
+    }
+    
+    .fixed-bottom{
+        right: 10px;
+        left: auto;
+        bottom: 10px;
+    }
+    .whatsApp{
+        font-size: 1.4rem;
+        transition: none;
+    }
+    
+    .whatsApp:hover{
+        transform: none;
+    }
 
 /* Nosotros */
 
-    /* .mainNosotros{
-        margin: 20px;
-        text-align: center;
-        line-height: 35px;
-        grid-area: mainNosotros;
-    }
-
     .mainNosotros{
-        margin: 20px;
-        text-align: center;
-    }
-
-    .sectionNosotros{
-        text-align: center;
+        margin: 20px 62px;
+        line-height: 30px;
     }
 
     .contenedorMapa{
@@ -789,64 +708,121 @@ p{
 
     .horario ul li{
         font-size: 16px;
-    } */
+    }
 
 /* Servicios */
 
-    /* .contenedorServicios{
-        margin: 0px 0px -50px 0px;
-    } */
+    .mainServicios{
+        line-height: 30px;
+    }
+
+    .mainServicios p{
+        margin: 0px 50px;
+    }
+
+    .tarjetasMargen{
+        margin: 20px 50px;
+    }
+
+    .tarjetaServ div:nth-child(1n){
+        margin: 10px;
+    }
+
+    .cardServicios{
+        padding-top: 20px;
+        opacity: 1;
+        transition: none;
+    }
+
+    .cardServicios:hover{
+        transform: none;
+        opacity: 1;
+    }
+
+    .subServicios{
+        margin-top: 60px;
+        margin-left: 0px;
+    }
+
+    .subServicios h2{
+        font-size: 1.8rem;
+    }
+
+    .subServicios p{
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .fondoServicios{
+        padding: 50px 60px;
+    }
+
+    .presupuesto{
+        transition: none;
+    }
+
+    .presupuesto:hover{
+        transform: none;
+    }
 
 /* Clientes */
 
-    /* .artClient{
+    .mainClient{
+        margin: 20px 62px;
+        line-height: 30px;
+    }
+
+    .artClient{
         flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .avatar img{
+        height: 250px;
+        width: 100%;
     }
 
     .contenedorReseña{
         text-align: center;
         flex-direction: column;
+        margin-right: 0px;
     }
 
     .contenedorReseña p{
-        margin: 0 40px;
-    }
- */
-/* Contacto */
-    
-    /* .sectionContacto{
-        flex-direction: column;
+        margin: 20px 62px;
     }
 
-    .fieldsetContacto{
-        width: 50%;
-        position: relative;
-        left: 18%;
+    .valoracion img{
+        width: 100%;
+        height: 50px;
+    }
+
+/* Contacto */
+    
+    .mainContacto{
+        margin: 20px 62px;
+        line-height: 30px;
+    }
+
+    .form label{
+        font-size: 18px;
+    }
+
+    .iconosContacto img{
+        height: 80px;
     }
 
     .contenedorMensaje2{
-        justify-content: space-around;
+        justify-content: space-between;
     }
- */
-   
 
+} 
 
 /* Responsive mobile */
 
-/* @media screen and (max-width: 500px){
+/* @media screen and (max-width: 576px){ */
 
-    h2{
-        font-size: 1.8rem;
-    }
     
-    h4{
-        font-size: 1rem;
-    }
-    
-    p{
-        font-size: 16px;
-        margin: 20px;
-    } */
 /* Header*/ 
     /* .header{
         height: 200px;
@@ -1090,5 +1066,4 @@ p{
 
     .iconosContacto img {
         height: 80px;
-    }
-} */
+    } */

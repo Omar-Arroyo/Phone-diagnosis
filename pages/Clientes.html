@@ -16,11 +16,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- css -->
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
-<header class="container-fluid">
+<header class="container-fluid margen">
     <nav class="navbar navbar-expand-lg header">
         <div class="container-fluid">
         <a class="navbar-brand" href="../index.html">
@@ -57,7 +57,7 @@
 <main class="mainClient">
     <h2>Clientes</h2>
         <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed tempore excepturi fuga quam modi ipsam amet in voluptate! Temporibus dicta velit consectetur nulla error explicabo inventore officiis ex pariatur. Animi alias modi neque fugit in.
+            Saber que hemos hecho un buen trabajo nos llena de orgullo. Acá a continuación podrás ver testimonios de clientes que recibieron nuestros servicios y atención.
         </p>
 </main>
 
@@ -71,7 +71,7 @@
         <div>
             <h2>Excelente servicio!</h2>
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi dolorum, quidem doloribus aut neque fuga minus adipisci ullam illum recusandae fugit, minima nam natus impedit officiis beatae sed amet aliquid accusamus delectus quam, voluptas quibusdam rem laboriosam. Excepturi, cumque saepe?
+                    Tenía un problema con mi pantalla táctil, ya que se me había caído el celular. En menos de 48h me llamaron para decirme que mi equipo estaba listo, honestamente mi celular quedó de 10, muy buena atención, rapidez y calidad. Los recomiendo!                
                 </p>
         </div>
         <div class="valoracion">
@@ -90,7 +90,7 @@
         <div>
             <h2>Muy profesionales!</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, voluptates maiores! Voluptatum blanditiis officiis doloremque soluta unde natus? Ipsum explicabo exercitationem, aut ad nesciunt, nobis magni eligendi aliquam illo laboriosam ex temporibus tenetur magnam. Deleniti?
+                    Envié mi equipo por un problema con mi sistema operativo, ya que no quería perder todos mis datos e información que tenía almacenado en mi celular. La atención fue muy amable y a pesar de un pequeño percance con el tiempo, la solución fue la esperada, no me decepcionaron.
                 </p>
         </div>
         <div class="valoracion">
@@ -107,34 +107,28 @@
     <a href="https://www.whatsapp.com/" target="_blank"><button class="whatsApp"><i class="bi bi-whatsapp"></i></button></a>
 </div>
 
-<footer class="container-fluid footer" data-aos="fade-up" data-aos-duration="1000">
-
+<footer class="container-fluid footer pt-4 pb-4">
     <div class="logoFooter">
         <img src="../images/LogoPD.png" alt="">
     </div>
     <div class="nameLogoFooter"><h4>Phone diagnosis</h4></div>
 
-    <div class="contacto"><h4>Contacto</h4></div>
-    <div class="contactoFooter">
-        <form action="">
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" >
-            
-            <label for="correo">Correo</label>
-            <input type="email" name="correo">
-            
-        
-            <label for="mensaje">Dejanos tu mensaje</label>
-        <div class="form">
-            <textarea name="mensaje"  cols="30" rows="5"></textarea>
-            
-            <div class="botonesSend">
-                <button class="botonSend"><i class="bi bi-send-fill"></i></button>
-                <input type="submit" value="Enviar">
+    <div class="suscripcion">
+        <h4>Suscribete Ahora!</h4>
+            <p>No te pierdas las futuras actualizaciones en nuestro sitio.</p>
+    </div>
+
+    <form>
+        <div class="d-flex correo pt-1">
+            <div class="w-100">
+                <label for="email" class="form-label"></label>
+                <input type="email" class="form-control" name="email" placeholder="Escribe tu correo">
+            </div>
+            <div class="flex-shrink-1">
+                <button type="submit" class="correoBoton"><i class="bi bi-envelope-paper"></i></button>
             </div>
         </div>
-        </form>
-    </div>
+    </form>
     
     <div class="redesFooter">
         <h4>Siguenos en nuestras redes</h4>
@@ -156,9 +150,9 @@
         <h6>Phone diagnosis</h6>
     </div>
 </footer>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 <script>
     AOS.init();
 </script>
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </html>

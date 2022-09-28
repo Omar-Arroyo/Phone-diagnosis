@@ -1,0 +1,50 @@
+.parallax{
+    background-image: url(../images/fondo.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px;
+}  
+
+.tituloMain{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    color: $colorSecundarioParrafo;
+    text-shadow: $sombra;
+    margin-top: 20px;
+}
+
+.card{
+    background:#033138;
+    border-radius:30px;
+    padding-top: 20px;
+    width: 23rem;
+    box-shadow: -5px 2px 4px #1393dd;
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+    &:hover{
+        cursor: pointer;
+        transform: translateY(-5px);
+    }
+}
+
+.card-text{
+    color: $colorSecundarioParrafo;
+}
+
+.imgborde{
+    border-radius: 50px;
+    height: 300px;
+}
+
+.carrusel img{
+    margin: auto;
+    width: 180px;
+}
+
+.fondoCarrusel{
+    background: linear-gradient(20deg, rgba(62,195,204,1) 0%, rgba(5,81,96,1) 100%);
+    border-top-style: solid;
+    border-top-color: #1d97dd;
+}

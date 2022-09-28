@@ -1,0 +1,65 @@
+.contenedorNosotros{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,0.1fr);
+    grid-template-areas: 
+    "mainNosotros"
+    "sectionNosotros"
+    "mapa"
+    ;
+}
+
+.mainNosotros{
+    margin: 20px 100px;
+    text-align: center;
+    line-height: 35px;
+    grid-area: mainNosotros;
+}
+
+.sectionNosotros{
+    text-align: center;
+    grid-area: sectionNosotros;
+}
+
+.contenedorMapa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    grid-area: mapa;
+}
+
+.iframeMaps{
+    margin: 40px;
+    border-radius: 20px;
+    box-shadow: $sombraCaja;
+    iframe{
+        border-radius: 30px;
+    }
+}
+
+.iframeMaps2{
+    display: none;
+    margin: 40px;
+    border-radius: 20px;
+    box-shadow: $sombraCaja;
+}
+
+
+.horario{
+    align-items: center;
+    text-align: center;
+    ul{
+        list-style-type: none; 
+        padding: 0;
+        li{
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}
+
+.horario__titulo{
+    color: $colorSecundarioParrafo;
+}
+

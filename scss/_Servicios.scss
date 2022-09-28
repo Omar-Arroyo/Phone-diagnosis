@@ -1,0 +1,74 @@
+.mainServicios{
+    text-align: center;
+    line-height: 35px;
+    p{
+        margin: 0px 100px;
+    }
+}
+
+.cardServicios{
+    background: linear-gradient(45deg, #3c5f93 0%, #003c81 100%);
+    border-style: solid;
+    border-color: #084298;
+    border-radius: 30px;
+    padding-top: 20px;
+    box-shadow: -5px 2px 4px #000046;
+    opacity: .8;
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+    &:hover{
+        cursor: pointer;
+        transform: translateY(-3px);
+        opacity: 1;
+    }
+}
+
+.imgServicios{
+    width: 100%;
+    height: 160px;
+}
+
+.subServicios{
+    margin-top: 30px;
+    margin-left: 50px;
+    text-align: center;
+    h2{
+        color: $colorSecundarioParrafo;
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-shadow: 2px 2px 4px #071f24;
+    }
+    p{
+        font-size: 22px;
+        line-height: 35px;
+        color: #ecfaff;
+        text-shadow: $sombra;
+    }
+}
+
+.fondoServicios{
+    background-image: url(../images/fondoServicios.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 100px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: -2px -3px 4px black;
+    margin: auto;
+}
+
+.presupuesto{
+    background: linear-gradient(0deg, rgba(127,127,213,1) 0%, rgba(134,168,231,1) 50%, rgba(145,234,228,1) 100%);
+    color: $colorPrincipal;
+    font-weight: 800;
+    border-radius: 10px;
+    border-style: none;
+    padding: 5px 20px;
+    text-shadow: 2px 2px 4px rgb(114, 114, 114);
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+    &:hover{
+        cursor: pointer;
+        transform: translateY(-3px);
+    }
+}

@@ -1,0 +1,136 @@
+.footer{
+    border-top-style: solid;
+    border-top-color: #1d97dd;
+    background: linear-gradient(45deg,#000046  40%, #1884a2 100%);
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    grid-template-rows: 70% 30%;
+    grid-template-areas: 
+    "logo suscripcion redes"
+    "nameLogoFooter correo copy"
+    ;
+}
+
+.logoFooter{
+    grid-area: logo;
+    align-self: end;
+    justify-self: center;
+    img{
+        height: 130px;
+        width: 100%;
+    }
+}
+
+.nameLogoFooter{
+    grid-area: nameLogoFooter;
+    justify-self: center;
+}
+
+.suscripcion{
+    grid-area: suscripcion;
+    margin: auto;
+    display: block;
+    p{
+        line-height: 35px;
+        color: $colorSecundarioParrafo;
+        text-shadow: $sombra;
+    }
+}
+
+.correo{
+    grid-area: correo;
+    label{
+        display: none;
+    }
+    input{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+} 
+
+.correoBoton{
+    color: $colorSecundario;
+    background: #28867a;
+    border-style:none ;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 1.5rem;
+}
+
+.redesFooter{
+    display: block;
+    text-align: center;
+    grid-area: redes;
+    h6{
+        color: $colorPrincipalParrafo;
+    }
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: copy;
+    img{
+        height: 30px;
+        padding: 0 5px;
+    }
+    h6{
+        padding: 0 20px;
+    }
+}
+
+.botonRedes{
+    background: none;
+    border-style: none;
+    font-size: 1.7rem;
+    margin: 25px 10px 0px 10px;
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+    &:hover{
+        cursor: pointer;
+        transform: translateY(-3px);
+    }
+}
+
+.facebook{
+    color: #3b5998;
+    background: white;
+    border-radius: 80px;
+}
+
+.instagram{
+    color: white;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    border-radius: 15px;
+}
+
+.twitter{
+    color: #00acee;
+}
+
+.youtube{
+    color: #FF0000 ;
+}
+
+.tiktok{
+    color: #000000;
+}
+
+.fixed-bottom{
+    right: 10px;
+    left: auto;
+    bottom: 10px;
+}
+.whatsApp{
+    color: white;
+    border-style: 1px solid;
+    background: #157347;
+    border-radius: 10px;
+    border-color: #157347;
+    font-size: 2rem;
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+    &:hover{
+        cursor: pointer;
+        transform: translateY(-3px);
+    }
+}
