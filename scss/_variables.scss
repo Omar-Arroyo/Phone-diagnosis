@@ -6,3 +6,14 @@ $sombra: 2px 4px 5px #000000;
 $sombraH2: 2px 2px 4px #103a41;
 $sombraH3: 2px 2px 4px #000046;
 $sombraCaja: -3px -4px 5px #757575;
+
+$estilosMain:(
+    margen: 20px 100px,
+    centro: center,
+    espaciado: 35px 
+);
+
+@mixin sizes($width, $height){
+    width: $width;
+    height: $height;
+}

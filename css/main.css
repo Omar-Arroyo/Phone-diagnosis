@@ -97,33 +97,33 @@
   .copyright h6 {
     padding: 0 20px; }
 
-.botonRedes {
+.botonRedes, .botonRedes--facebook, .botonRedes--instagram, .botonRedes--twitter, .botonRedes--youtube, .botonRedes--tiktok {
   background: none;
   border-style: none;
   font-size: 1.7rem;
   margin: 25px 10px 0px 10px;
   transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s; }
-  .botonRedes:hover {
+  .botonRedes:hover, .botonRedes--facebook:hover, .botonRedes--instagram:hover, .botonRedes--twitter:hover, .botonRedes--youtube:hover, .botonRedes--tiktok:hover {
     cursor: pointer;
     transform: translateY(-3px); }
 
-.facebook {
+.botonRedes--facebook {
   color: #3b5998;
   background: white;
   border-radius: 80px; }
 
-.instagram {
+.botonRedes--instagram {
   color: white;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   border-radius: 15px; }
 
-.twitter {
+.botonRedes--twitter {
   color: #00acee; }
 
-.youtube {
+.botonRedes--youtube {
   color: #FF0000; }
 
-.tiktok {
+.botonRedes--tiktok {
   color: #000000; }
 
 .fixed-bottom {
@@ -482,10 +482,10 @@ p {
   .copyright h6 {
     padding: 0 20px;
     margin: 0%; }
-  .botonRedes {
+  .botonRedes, .botonRedes--facebook, .botonRedes--instagram, .botonRedes--twitter, .botonRedes--youtube, .botonRedes--tiktok {
     font-size: 1.2rem;
     transition: none; }
-    .botonRedes:hover {
+    .botonRedes:hover, .botonRedes--facebook:hover, .botonRedes--instagram:hover, .botonRedes--twitter:hover, .botonRedes--youtube:hover, .botonRedes--tiktok:hover {
       transform: none; }
   .fixed-bottom {
     right: 10px;

@@ -10,9 +10,9 @@
 }
 
 .mainNosotros{
-    margin: 20px 100px;
-    text-align: center;
-    line-height: 35px;
+    margin: map-get($estilosMain, margen);
+    text-align: map-get($estilosMain, centro);
+    line-height: map-get($estilosMain, espaciado);
     grid-area: mainNosotros;
 }
 

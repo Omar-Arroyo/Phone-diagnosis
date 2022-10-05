@@ -92,27 +92,32 @@
     }
 }
 
-.facebook{
+.botonRedes--facebook{
+    @extend .botonRedes;
     color: #3b5998;
     background: white;
     border-radius: 80px;
 }
 
-.instagram{
+.botonRedes--instagram{
+    @extend .botonRedes;
     color: white;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
     border-radius: 15px;
 }
 
-.twitter{
+.botonRedes--twitter{ 
+    @extend .botonRedes;
     color: #00acee;
 }
 
-.youtube{
-    color: #FF0000 ;
+.botonRedes--youtube{
+    @extend .botonRedes;
+    color: #FF0000;
 }
 
-.tiktok{
+.botonRedes--tiktok{
+    @extend .botonRedes;
     color: #000000;
 }
 
@@ -121,6 +126,7 @@
     left: auto;
     bottom: 10px;
 }
+
 .whatsApp{
     color: white;
     border-style: 1px solid;
