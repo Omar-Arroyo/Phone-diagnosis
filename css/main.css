@@ -222,6 +222,12 @@
   border-radius: 20px;
   box-shadow: -3px -4px 5px #757575; }
 
+.iframeMaps3 {
+  display: none;
+  margin: 40px;
+  border-radius: 20px;
+  box-shadow: -3px -4px 5px #757575; }
+
 .horario {
   align-items: center;
   text-align: center; }
@@ -508,6 +514,8 @@ p {
     display: initial; }
     .iframeMaps2 iframe {
       border-radius: 30px; }
+  .iframeMaps3 {
+    display: none; }
   .horario ul li {
     font-size: 16px; }
   /* Servicios */
@@ -569,3 +577,175 @@ p {
     height: 80px; }
   .contenedorMensaje2 {
     justify-content: space-between; } }
+
+/* Responsive mobile */
+@media screen and (max-width: 425px) {
+  /* Body */
+  body {
+    overflow-x: hidden; }
+  h2 {
+    font-size: 1.5rem; }
+  h3 {
+    font-size: 1.2rem; }
+  h4 {
+    font-size: 1.1rem; }
+  p {
+    font-size: 16px; }
+  /* Header*/
+  .navbar-brand {
+    font-size: 2rem;
+    margin-left: 0px; }
+    .navbar-brand img {
+      width: 100px; }
+  .navbar-toggler {
+    margin: auto; }
+  .nav li {
+    font-size: 18px; }
+  .navbar-collapse {
+    text-align: center; }
+  /* Main */
+  .parallax {
+    padding: 40px; }
+  .tituloMain {
+    font-size: 2rem;
+    margin-top: 10px; }
+  .card {
+    width: 15rem;
+    transition: none; }
+    .card:hover {
+      transform: none; }
+  .tarjeta div:nth-child(1n) {
+    display: block;
+    margin: auto;
+    margin-top: 20px; }
+  .imgborde {
+    border-radius: 20px;
+    height: 180px; }
+  .carrusel img {
+    margin: auto;
+    width: 100px; }
+  /* Footer */
+  .footer {
+    background: linear-gradient(180deg, #000046 40%, #114350 75%, #1884a2 100%);
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, 0.5fr);
+    grid-template-areas: "logo" "nameLogoFooter" "suscripcion" "correo" "redes" "copy"; }
+  .logoFooter img {
+    height: 100px; }
+  .margenAlerta {
+    margin: 0px 30px; }
+  .suscripcion {
+    text-align: center; }
+    .suscripcion p {
+      line-height: 30px;
+      font-size: 16px; }
+  .correo input {
+    height: 30px; }
+  .correoBoton {
+    font-size: 18.5px; }
+  .copyright {
+    margin-top: 5px; }
+    .copyright img {
+      height: 20px; }
+  .copyright h5 {
+    font-size: 12px;
+    margin: 0%; }
+  .copyright h6 {
+    padding: 0 20px;
+    margin: 0%; }
+  .botonRedes, .botonRedes--facebook, .botonRedes--instagram, .botonRedes--twitter, .botonRedes--youtube, .botonRedes--tiktok {
+    font-size: 1.2rem;
+    transition: none; }
+    .botonRedes:hover, .botonRedes--facebook:hover, .botonRedes--instagram:hover, .botonRedes--twitter:hover, .botonRedes--youtube:hover, .botonRedes--tiktok:hover {
+      transform: none; }
+  .fixed-bottom {
+    right: 10px;
+    left: auto;
+    bottom: 10px; }
+  .whatsApp {
+    font-size: 1.4rem;
+    transition: none; }
+    .whatsApp:hover {
+      transform: none; }
+  /* Nosotros */
+  .mainNosotros {
+    margin: 20px 62px;
+    line-height: 30px; }
+  .sectionNosotros {
+    margin: 0px 50px; }
+  .contenedorMapa {
+    flex-direction: row; }
+  .iframeMaps {
+    display: none; }
+  .iframeMaps2 {
+    display: none; }
+  .iframeMaps3 {
+    display: initial; }
+    .iframeMaps3 iframe {
+      border-radius: 30px; }
+  .horario ul li {
+    color: #000000;
+    font-size: 16px; }
+  /* Servicios */
+  .mainServicios {
+    line-height: 30px; }
+    .mainServicios p {
+      margin: 0px 50px; }
+  .tarjetasMargen {
+    margin: 20px 50px; }
+  .tarjetaServ div:nth-child(1n) {
+    margin: 10px; }
+  .cardServicios {
+    padding-top: 20px;
+    opacity: 1;
+    transition: none; }
+    .cardServicios:hover {
+      transform: none;
+      opacity: 1; }
+  .subServicios {
+    margin-top: 60px;
+    margin-left: 0px; }
+    .subServicios h2 {
+      font-size: 1.8rem; }
+    .subServicios p {
+      font-size: 18px;
+      line-height: 30px; }
+  .fondoServicios {
+    padding: 50px;
+    display: flex;
+    flex-direction: column-reverse; }
+  .presupuesto {
+    transition: none; }
+    .presupuesto:hover {
+      transform: none; }
+  /* Clientes */
+  .mainClient {
+    margin: 20px 62px;
+    line-height: 30px; }
+  .artClient {
+    flex-direction: column;
+    margin-bottom: 20px; }
+  .avatar img {
+    height: 220px;
+    width: 100%; }
+  .contenedorReseña {
+    text-align: center;
+    flex-direction: column;
+    margin-right: 0px; }
+    .contenedorReseña p {
+      margin: 20px 62px; }
+  .valoracion img {
+    width: 100%;
+    height: 40px; }
+  /* Contacto */
+  .mainContacto {
+    margin: 20px 62px;
+    line-height: 30px; }
+  .form label {
+    font-size: 16px; }
+  .iconosContacto img {
+    height: 80px; }
+  .contenedorMensaje2 {
+    justify-content: space-around; }
+  .mensajeContacto h2 {
+    margin: 10px; } }
