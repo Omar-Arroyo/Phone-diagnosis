@@ -15,7 +15,6 @@ body{
     margin: 0%;
     font-family:'Lato', sans-serif;
     background: linear-gradient(20deg, #000046 0%, #3b9da2 50%, #93f5f9 100%);
-    overflow-x: hidden;
 }
 
 h2{
@@ -33,7 +32,7 @@ h3{
 
 h4{
     color: $colorSecundario;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     text-shadow: $sombra;
 }
 
@@ -47,17 +46,13 @@ h6{
 
 p{
     color: $colorPrincipalParrafo;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 /* Resposive Tablet */
 
 @media screen and (max-width: 768px){
     /* Body */
-        body{
-            overflow-x: hidden;
-        }
-        
         h2{
             font-size: 2rem;
         }
@@ -328,7 +323,7 @@ p{
         }
         
         h2{
-            font-size: 1.5rem;
+            font-size: 1.7rem;
         }
         
         h3{
@@ -604,6 +599,15 @@ p{
     
         .form label{
             font-size: 16px;
+        }
+
+        .botonesCont{
+            text-align: center;
+            margin: 5px 0px;
+        }
+
+        .botonContacto{
+            width: 25%;
         }
     
         .iconosContacto img{

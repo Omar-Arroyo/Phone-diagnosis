@@ -22,7 +22,7 @@
 </head>
 
 <body>
-<header class="container-fluid margen">
+<header class="container-fluid margen animate__animated animate__fadeInDown">
     <nav class="navbar navbar-expand-lg header">
         <div class="container-fluid">
         <a class="navbar-brand" href="../index.html">
@@ -55,35 +55,35 @@
     </nav>
 </header>
 
-<main class="mainServicios container-fluid mt-4 mb-3">
+<main class="mainServicios container-fluid mt-4 mb-3 animate__animated animate__fadeInLeft">
     <h2>Servicios</h2>
-        <p>Sabemos que ofrecer un buen servicio es indispensable para nuestros clientes, por ello cada caso lo tratamos con su correspondiente atención, entre nuestros servicios destacados y más recurridos tenemos:</p>
+        <p>Sabemos que ofrecer un buen servicio es indispensable para nuestros clientes, por ello cada caso lo tratamos con su correspondiente atención, entre nuestros <b>servicios destacados</b> y más recurridos tenemos:</p>
 </main> 
 
 <section class="container-fluid">
     <div class="row justify-content-around tarjetaServ tarjetasMargen">
-        <div class="card cardServicios col-lg-3 col-md-5" style="width: 15rem;">
+        <div class="card cardServicios col-lg-3 col-md-5 animate__animated animate__fadeInUp" style="width: 15rem;">
             <img src="../images/tactil.png" class="card-img-top imgServicios" alt="Foto refencial (cambio de la pantalla táctil)">
             <div class="card-body">
                 <h4 class="card-title text-center">Cambios de pantalla táctil</h4>
             </div>
         </div>
 
-        <div class="card cardServicios col-lg-3 col-md-5" style="width: 15rem;">
+        <div class="card cardServicios col-lg-3 col-md-5 animate__animated animate__fadeInUp animacion__1" style="width: 15rem;">
             <img src="../images/repg.png" class="card-img-top imgServicios" alt="Foto referencial (reparación)">
             <div class="card-body">
                 <h4 class="card-title text-center">Reparaciones genéricas</h4>
             </div>
         </div>
 
-        <div class="card cardServicios col-lg-3 col-md-5" style="width: 15rem;">
+        <div class="card cardServicios col-lg-3 col-md-5 animate__animated animate__fadeInUp animacion__2" style="width: 15rem;">
             <img src="../images/vidrot.png" class="card-img-top imgServicios" alt="Foto referencial (colocación de vidrio templado)">
             <div class="card-body">
                 <h4 class="card-title text-center">Colocación de vidrio templado </h4>
             </div>
         </div>
 
-        <div class="card cardServicios col-lg-3 col-md-5" style="width: 15rem;">
+        <div class="card cardServicios col-lg-3 col-md-5 animate__animated animate__fadeInUp animacion__3" style="width: 15rem;">
             <img src="../images/expm.png" class="card-img-top imgServicios" alt="Foto referencial (Expansión de memoria)">
             <div class="card-body">
                 <h4 class="card-title text-center">Expansión de memoria</h4>
@@ -98,17 +98,17 @@
                 <label for="nombre" class="form-label">Nombre</label>
                 <input type="text" class="form-control" name="nombre" placeholder="Escribe tu nombre">
             </div>
-    
-            <div class="col-lg-6">
+
+            <div class="col-lg-12">
                 <label for="email" class="form-label">Email</label>
                 <input type="email" class="form-control" name="email" placeholder="Escribe tu correo">
             </div>
-    
-            <div class="col-lg-6 mb-3">
+
+            <div class="col-lg-12 mb-3">
                 <label for="telefono" class="form-label">Teléfono</label>
                 <input type="numer" class="form-control" name="telefono" placeholder="Escribe tu telefono">
             </div>
-    
+
             <div class="col-lg-12">
                 <select class="form-select" aria-label="Default select example">
                     <option selected>Marca del equipo</option>
@@ -126,11 +126,9 @@
                 <label for="consulta">Servicio a consultar</label>
                 <textarea name="consulta" class="form-control" cols="50" rows="3"></textarea>
             </div>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <input class="presupuesto" type="submit" value="Consultar presupuesto">
-                </div>
+        
+            <div class="botonPresupuesto">
+                <input class="presupuesto" type="submit" value="Consultar presupuesto">
             </div>
         </form>
 
@@ -142,7 +140,7 @@
         </article>
 </section>
 <!-- Boton de WhatsApp -->
-<div class="fixed-bottom">
+<div class="fixed-bottom animate__animated animate__fadeInUp">
     <a href="https://www.whatsapp.com/" target="_blank"><button class="whatsApp"><i class="bi bi-whatsapp"></i></button></a>
 </div>
        

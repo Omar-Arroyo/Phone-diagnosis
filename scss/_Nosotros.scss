@@ -1,6 +1,6 @@
 .contenedorNosotros{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-rows: repeat(3,0.1fr);
     grid-template-areas: 
     "mainNosotros"
