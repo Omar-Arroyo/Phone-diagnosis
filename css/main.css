@@ -588,7 +588,7 @@ p {
     justify-content: space-between; } }
 
 /* Responsive mobile */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 460px) {
   /* Body */
   body {
     overflow-x: hidden; }
