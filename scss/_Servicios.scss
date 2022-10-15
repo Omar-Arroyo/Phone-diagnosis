@@ -13,13 +13,6 @@
     border-radius: 30px;
     padding-top: 20px;
     box-shadow: -5px 2px 4px #000046;
-    opacity: .8;
-    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
-    &:hover{
-        cursor: pointer;
-        transform: translateY(-3px);
-        opacity: 1;
-    }
 }
 
 .animacion__1{

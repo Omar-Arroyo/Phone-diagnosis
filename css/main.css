@@ -253,13 +253,7 @@
   border-color: #084298;
   border-radius: 30px;
   padding-top: 20px;
-  box-shadow: -5px 2px 4px #000046;
-  opacity: .8;
-  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s; }
-  .cardServicios:hover {
-    cursor: pointer;
-    transform: translateY(-3px);
-    opacity: 1; }
+  box-shadow: -5px 2px 4px #000046; }
 
 .animacion__1 {
   animation-delay: 0.3s; }
@@ -603,7 +597,8 @@ p {
   /* Header*/
   .navbar-brand {
     font-size: 2rem;
-    margin-left: 0px; }
+    margin-left: 0px;
+    margin-right: 0px; }
     .navbar-brand img {
       width: 100px; }
   .navbar-toggler {
@@ -756,10 +751,20 @@ p {
     text-align: center;
     margin: 5px 0px; }
   .botonContacto {
-    width: 25%; }
+    width: 28%; }
   .iconosContacto img {
     height: 80px; }
   .contenedorMensaje2 {
     justify-content: space-around; }
   .mensajeContacto h2 {
     margin: 10px; } }
+
+@media screen and (max-width: 400px) {
+  /* Header */
+  .navbar-brand {
+    font-size: 1.8rem; } }
+
+@media screen and (max-width: 380px) {
+  /* Header */
+  .navbar-brand img {
+    width: 80px; } }

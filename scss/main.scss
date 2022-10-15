@@ -341,6 +341,7 @@ p{
         .navbar-brand{
             font-size: 2rem;
             margin-left: 0px;
+            margin-right: 0px;
             img{
                 width: 100px;
             }
@@ -607,7 +608,7 @@ p{
         }
 
         .botonContacto{
-            width: 25%;
+            width: 28%;
         }
     
         .iconosContacto img{
@@ -625,3 +626,19 @@ p{
         }
     
     } 
+
+    @media screen and (max-width: 400px){
+    /* Header */
+        .navbar-brand{
+            font-size: 1.8rem;
+        }
+    }
+
+    @media screen and (max-width: 380px){
+    /* Header */
+        .navbar-brand{
+            img{
+                width: 80px;
+            }
+        }
+    }
